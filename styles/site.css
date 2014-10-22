@@ -624,22 +624,22 @@ Fullpage JS
 
 /* line 101, ../scss/modules/fullpage/_base.scss */
 .fp-slidesNav.bottom {
-  bottom: 17px;
+  bottom: 3%;
 }
 
-/* line 104, ../scss/modules/fullpage/_base.scss */
+/* line 105, ../scss/modules/fullpage/_base.scss */
 .fp-slidesNav.top {
   top: 17px;
 }
 
-/* line 108, ../scss/modules/fullpage/_base.scss */
+/* line 109, ../scss/modules/fullpage/_base.scss */
 #fp-nav ul,
 .fp-slidesNav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 113, ../scss/modules/fullpage/_base.scss */
+/* line 114, ../scss/modules/fullpage/_base.scss */
 #fp-nav li,
 .fp-slidesNav li {
   display: block;
@@ -649,12 +649,12 @@ Fullpage JS
   position: relative;
 }
 
-/* line 120, ../scss/modules/fullpage/_base.scss */
+/* line 121, ../scss/modules/fullpage/_base.scss */
 .fp-slidesNav li {
   display: inline-block;
 }
 
-/* line 124, ../scss/modules/fullpage/_base.scss */
+/* line 125, ../scss/modules/fullpage/_base.scss */
 #fp-nav li a,
 .fp-slidesNav li a {
   display: block;
@@ -666,13 +666,13 @@ Fullpage JS
   text-decoration: none;
 }
 
-/* line 134, ../scss/modules/fullpage/_base.scss */
+/* line 135, ../scss/modules/fullpage/_base.scss */
 #fp-nav li .active span,
 .fp-slidesNav .active span {
   background: #cc9900;
 }
 
-/* line 138, ../scss/modules/fullpage/_base.scss */
+/* line 139, ../scss/modules/fullpage/_base.scss */
 #fp-nav span,
 .fp-slidesNav span {
   top: 2px;
@@ -686,7 +686,7 @@ Fullpage JS
   z-index: 1;
 }
 
-/* line 149, ../scss/modules/fullpage/_base.scss */
+/* line 150, ../scss/modules/fullpage/_base.scss */
 .fp-tooltip {
   position: absolute;
   top: -2px;
@@ -697,12 +697,12 @@ Fullpage JS
   max-width: 220px;
 }
 
-/* line 158, ../scss/modules/fullpage/_base.scss */
+/* line 159, ../scss/modules/fullpage/_base.scss */
 .fp-tooltip.right {
   right: 20px;
 }
 
-/* line 161, ../scss/modules/fullpage/_base.scss */
+/* line 162, ../scss/modules/fullpage/_base.scss */
 .fp-tooltip.left {
   left: 20px;
 }
@@ -781,7 +781,32 @@ background: rgba(255,255,255,.3); //- white
   left: 3%;
 }
 
-/* line 3, ../scss/modules/fullpage/_slide.scss */
+/* line 5, ../scss/modules/fullpage/_slide.scss */
+.slide#students {
+  background-image: url(../images/student-experience.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 11, ../scss/modules/fullpage/_slide.scss */
+.slide#leaders {
+  background-image: url(../images/thought-leaders.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 17, ../scss/modules/fullpage/_slide.scss */
+.slide#culture {
+  background-image: url(../images/entrepreneurial-culture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 23, ../scss/modules/fullpage/_slide.scss */
+.slide#place {
+  background-image: url(../images/unique-place.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 30, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow {
   border-width: 0;
   border-color: transparent;
@@ -794,18 +819,18 @@ background: rgba(255,255,255,.3); //- white
   filter: Alpha(opacity=33);
   /*IE8 and earlier */
 }
-/* line 15, ../scss/modules/fullpage/_slide.scss */
+/* line 42, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow:hover {
   opacity: 1;
   filter: Alpha(opacity=100);
   /*IE8 and earlier */
 }
-/* line 20, ../scss/modules/fullpage/_slide.scss */
+/* line 47, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow i {
   font-size: 2.3em;
 }
 
-/* line 24, ../scss/modules/fullpage/_slide.scss */
+/* line 51, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow.fp-prev {
   background-color: rgba(33, 33, 33, 0.1);
   padding: 1em 3em 3em 1em;
@@ -818,7 +843,7 @@ background: rgba(255,255,255,.3); //- white
   z-index: 99;
 }
 
-/* line 39, ../scss/modules/fullpage/_slide.scss */
+/* line 66, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow.fp-next {
   background-color: rgba(33, 33, 33, 0.1);
   padding: 1em 2.6em 3em 1.3em;

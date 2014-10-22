@@ -1,5 +1,32 @@
 // All Screens
 
+.slide {
+
+    &#students {
+        background-image: url(../images/student-experience.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &#leaders {
+        background-image: url(../images/thought-leaders.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &#culture {
+        background-image: url(../images/entrepreneurial-culture.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &#place {
+        background-image: url(../images/unique-place.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 .fp-controlArrow {
     border-width: 0;
     border-color: transparent;
