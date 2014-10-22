@@ -1,0 +1,88 @@
+/*
+ * NavBar
+ */
+
+
+.navbar {
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.63);
+    box-shadow: 0 2px 12px rgba(150, 150, 150, 0.23);
+}
+
+
+.navbar-nav {
+    
+    // Mobile
+    @media screen and (max-width: 767px){
+        
+        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.93);
+        margin-top: 0;
+        margin-bottom: 0;
+        
+        //border: 1px dashed red; //<-- development
+        //background: rgba(201,201,201,1);
+        
+        &> li {
+            background-color: transparent;
+            
+            &> a {
+                
+                background-color: #eee;
+                border-bottom: 2px solid transparent;
+                
+                &:hover, &:focus {
+                    background-color: transparent;
+                    //border-bottom-color: rgba(255, 204, 0, .99);
+                }
+            }
+        }
+        
+        &> li.active {
+            //background-color: #ffcc00;
+            
+            &> a {
+                
+                border-bottom: 2px solid #ffcc00;
+                
+                &:hover, &:focus {
+                    border-bottom-color: rgba(255,255,255,.25);
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 768px) {
+        &> li {
+            background-color: transparent;
+            
+            &> a {
+                
+                background-color: #eee;
+                border-bottom: 2px solid transparent;
+                
+                &:hover, &:focus {
+                    //border-bottom-color: rgba(255,255,255,.25);
+                    border-bottom-color: rgba(255, 204, 0, 1);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.25);
+}
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+    border-bottom-color: #ffcc00;
+}
+*/
