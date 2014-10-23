@@ -32,7 +32,11 @@ background: rgba(255,255,255,.3); //- white
         background-image: url(../images/bng_bg.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: cover;
+        
+        // Tablet
+        @media screen and (min-width: 999px){
+            background-size: cover;
+        }
     }
 
     .sectionsNav {
@@ -46,6 +50,7 @@ background: rgba(255,255,255,.3); //- white
         // Tablet
         @media (max-width: 999px){
             left: 47%;
+            display: none;
         }
 
         // Mobile-Landscape

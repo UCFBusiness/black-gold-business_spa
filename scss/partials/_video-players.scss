@@ -32,9 +32,12 @@
     @extend .yt-player;
     
     img {
-        background-image: url(../images/BL_logo.jpg);
+        background-image: url(../images/bng_logo.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        border: 2px solid #333;
+        border-radius: 6px;
+        width: 70%;
     }
 }
