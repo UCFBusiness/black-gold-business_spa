@@ -112,6 +112,7 @@
 /*
  * Pages
  */
+
 .menu-nav {
     padding: 0;
     font-size: 2em;
@@ -131,12 +132,17 @@
     }
 }
 
-#frame-d {
-    background: #fff;
-    padding: 5px 3px 0 3px;
-    width: 100%;
-    position: absolute;
-    bottom: -230px;
+
+.iframe-block-lg {
+    
+    img {
+        position: absolute;
+        botom: 0;
+    }
+    
+    iframe {
+        margin-bottom: 20px;
+    }
     
     @media screen and (max-width: 999px){
         display: none;
@@ -144,14 +150,28 @@
     }
 }
 
-#frame-m {
+#iframe-block-xs {
     padding: 5px 3px 0 3px;
+    
+    img {
+        position: absolute;
+        botom: -20px;
+    }
     
     @media screen and (min-width: 1000px){
         display: none;
         visibility: hidden;
     }
 }
+
+.iframe-block-xs {
+
+    @media screen and (min-width: 1000px){
+        display: none;
+        visibility: hidden;
+    }
+}
+
 
 .iframecover {
     background-color: rgba(255,255,255,0.01);
@@ -170,7 +190,7 @@
         
         span {
             color: #cc9900;
-            display: block;
+            
         }
         
         // Tablet
@@ -194,11 +214,14 @@
 .textframe {
     padding: 10px;
     font-family: Arial,sans-serif;
+    font-weight: 200;
+    line-height: 1.3em;
+    font-size: 1.1em;
     
         // Tablet
         @media screen and (min-width: 1000px){
             font-weight: 200;
             line-height: 1.3em;
-            font-size: 1.3em;
+            font-size: 1.6em;
         }
 }

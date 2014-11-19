@@ -189,19 +189,19 @@ a { //suppressing the -webkit-tap-highlight-color
 /*
  * Pages
  */
-/* line 115, ../scss/partials/_primary.scss */
+/* line 116, ../scss/partials/_primary.scss */
 .menu-nav {
   padding: 0;
   font-size: 2em;
   list-style: none;
 }
 @media screen and (min-width: 1000px) {
-  /* line 115, ../scss/partials/_primary.scss */
+  /* line 116, ../scss/partials/_primary.scss */
   .menu-nav {
     margin-top: 50px;
     margin-bottom: 0;
   }
-  /* line 126, ../scss/partials/_primary.scss */
+  /* line 127, ../scss/partials/_primary.scss */
   .menu-nav li {
     display: inline-block;
     padding: 0 3%;
@@ -209,35 +209,49 @@ a { //suppressing the -webkit-tap-highlight-color
   }
 }
 
-/* line 134, ../scss/partials/_primary.scss */
-#frame-d {
-  background: #fff;
-  padding: 5px 3px 0 3px;
-  width: 100%;
+/* line 138, ../scss/partials/_primary.scss */
+.iframe-block-lg img {
   position: absolute;
-  bottom: -230px;
+  botom: 0;
+}
+/* line 143, ../scss/partials/_primary.scss */
+.iframe-block-lg iframe {
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 999px) {
-  /* line 134, ../scss/partials/_primary.scss */
-  #frame-d {
+  /* line 136, ../scss/partials/_primary.scss */
+  .iframe-block-lg {
     display: none;
     visibility: hidden;
   }
 }
 
-/* line 147, ../scss/partials/_primary.scss */
-#frame-m {
+/* line 153, ../scss/partials/_primary.scss */
+#iframe-block-xs {
   padding: 5px 3px 0 3px;
 }
+/* line 156, ../scss/partials/_primary.scss */
+#iframe-block-xs img {
+  position: absolute;
+  botom: -20px;
+}
 @media screen and (min-width: 1000px) {
-  /* line 147, ../scss/partials/_primary.scss */
-  #frame-m {
+  /* line 153, ../scss/partials/_primary.scss */
+  #iframe-block-xs {
     display: none;
     visibility: hidden;
   }
 }
 
-/* line 156, ../scss/partials/_primary.scss */
+@media screen and (min-width: 1000px) {
+  /* line 167, ../scss/partials/_primary.scss */
+  .iframe-block-xs {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* line 176, ../scss/partials/_primary.scss */
 .iframecover {
   background-color: rgba(255, 255, 255, 0.01);
   position: absolute;
@@ -245,46 +259,48 @@ a { //suppressing the -webkit-tap-highlight-color
   bottom: 20px;
 }
 
-/* line 165, ../scss/partials/_primary.scss */
+/* line 185, ../scss/partials/_primary.scss */
 .main-title h1 {
   font-size: 3em;
   font-weight: 800;
   color: black;
   line-height: 0.93em;
 }
-/* line 171, ../scss/partials/_primary.scss */
+/* line 191, ../scss/partials/_primary.scss */
 .main-title h1 span {
   color: #cc9900;
-  display: block;
 }
 @media screen and (min-width: 1000px) {
-  /* line 165, ../scss/partials/_primary.scss */
+  /* line 185, ../scss/partials/_primary.scss */
   .main-title h1 {
     font-size: 6.3em;
     letter-spacing: .001em;
   }
-  /* line 182, ../scss/partials/_primary.scss */
+  /* line 202, ../scss/partials/_primary.scss */
   .main-title h1 span {
     display: inline-block;
   }
 }
-/* line 188, ../scss/partials/_primary.scss */
+/* line 208, ../scss/partials/_primary.scss */
 .main-title h2 {
   font-size: 2.3em;
   color: white;
 }
 
-/* line 194, ../scss/partials/_primary.scss */
+/* line 214, ../scss/partials/_primary.scss */
 .textframe {
   padding: 10px;
   font-family: Arial,sans-serif;
+  font-weight: 200;
+  line-height: 1.3em;
+  font-size: 1.1em;
 }
 @media screen and (min-width: 1000px) {
-  /* line 194, ../scss/partials/_primary.scss */
+  /* line 214, ../scss/partials/_primary.scss */
   .textframe {
     font-weight: 200;
     line-height: 1.3em;
-    font-size: 1.3em;
+    font-size: 1.6em;
   }
 }
 
@@ -774,7 +790,7 @@ background: rgba(255,255,255,.3); //- white
 .fp-section {
   margin: 0;
   padding: 0;
-  min-height: 500px;
+  min-height: 700px;
   color: #fff;
   background: #fff;
 }
@@ -783,6 +799,7 @@ background: rgba(255,255,255,.3); //- white
   background-image: url(../images/bng_bg.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (min-width: 999px) {
   /* line 28, ../scss/modules/fullpage/_section.scss */
@@ -790,7 +807,7 @@ background: rgba(255,255,255,.3); //- white
     background-size: cover;
   }
 }
-/* line 43, ../scss/modules/fullpage/_section.scss */
+/* line 44, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav {
   padding: .1em;
   font-family: 'arial', sans-serif;
@@ -800,48 +817,48 @@ background: rgba(255,255,255,.3); //- white
   z-index: 100;
 }
 @media (max-width: 999px) {
-  /* line 43, ../scss/modules/fullpage/_section.scss */
+  /* line 44, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
     left: 47%;
     display: none;
   }
 }
 @media (max-width: 699px) and (orientation: landscape) {
-  /* line 43, ../scss/modules/fullpage/_section.scss */
+  /* line 44, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
     left: 46%;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 43, ../scss/modules/fullpage/_section.scss */
+  /* line 44, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
     left: 43%;
   }
 }
-/* line 67, ../scss/modules/fullpage/_section.scss */
+/* line 68, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav.go {
   text-align: center;
   text-decoration: none;
 }
-/* line 72, ../scss/modules/fullpage/_section.scss */
+/* line 73, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav.go:before, .fp-section .sectionsNav#goNext:before, .fp-section .sectionsNav#goTop:before {
   display: block;
   font-size: 0.7em;
 }
-/* line 79, ../scss/modules/fullpage/_section.scss */
+/* line 80, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav#goNext:before {
   content: "Learn More";
 }
-/* line 86, ../scss/modules/fullpage/_section.scss */
+/* line 87, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav#goTop:before {
   content: "Top";
 }
-/* line 92, ../scss/modules/fullpage/_section.scss */
+/* line 93, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav .fa-chevron-down {
   font-size: 2.8em;
 }
 
-/* line 98, ../scss/modules/fullpage/_section.scss */
+/* line 99, ../scss/modules/fullpage/_section.scss */
 .fullPage-header {
   position: absolute;
   top: 0;
@@ -858,35 +875,36 @@ background: rgba(255,255,255,.3); //- white
   background-image: url(../images/student-experience.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
-/* line 15, ../scss/modules/fullpage/_slide.scss */
+/* line 16, ../scss/modules/fullpage/_slide.scss */
 .slide#leaders {
   background-image: url(../images/thought-leaders.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 22, ../scss/modules/fullpage/_slide.scss */
+/* line 23, ../scss/modules/fullpage/_slide.scss */
 .slide#culture {
   background-image: url(../images/entrepreneurial-culture.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 29, ../scss/modules/fullpage/_slide.scss */
+/* line 30, ../scss/modules/fullpage/_slide.scss */
 .slide#place {
   background-image: url(../images/unique-place.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 36, ../scss/modules/fullpage/_slide.scss */
+/* line 37, ../scss/modules/fullpage/_slide.scss */
 .slide .section-wrapper {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 41, ../scss/modules/fullpage/_slide.scss */
+/* line 42, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow {
   border-width: 0;
   border-color: transparent;
@@ -899,18 +917,18 @@ background: rgba(255,255,255,.3); //- white
   filter: Alpha(opacity=33);
   /*IE8 and earlier */
 }
-/* line 53, ../scss/modules/fullpage/_slide.scss */
+/* line 54, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow:hover {
   opacity: 1;
   filter: Alpha(opacity=100);
   /*IE8 and earlier */
 }
-/* line 58, ../scss/modules/fullpage/_slide.scss */
+/* line 59, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow i {
   font-size: 2.3em;
 }
 
-/* line 62, ../scss/modules/fullpage/_slide.scss */
+/* line 63, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow.fp-prev {
   background-color: rgba(255, 255, 255, 0.33);
   padding: 1em 3em 3em 1em;
@@ -924,7 +942,7 @@ background: rgba(255,255,255,.3); //- white
   z-index: 99;
 }
 
-/* line 78, ../scss/modules/fullpage/_slide.scss */
+/* line 79, ../scss/modules/fullpage/_slide.scss */
 .fp-controlArrow.fp-next {
   background-color: rgba(255, 255, 255, 0.33);
   padding: 1em 2.6em 3em 1.3em;
